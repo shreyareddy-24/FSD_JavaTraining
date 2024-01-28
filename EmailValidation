@@ -1,0 +1,25 @@
+package strings;
+public class EmailValid {
+
+	
+		public static void main(String args[]) {
+			String str = "shreyaneelam242@gmail.com";
+			boolean res = false;
+			if(str.contains("@")) {
+				if(str.substring(str.length()-4).equals(".com")) {
+					if(str.indexOf(".com")-str.indexOf("@")>1) {
+						res = true;
+					}
+				}
+			}
+			if(res==false) {
+				System.out.println("Invalid Email");
+			} else {
+				System.out.println("Valid Email");
+			}
+		}
+
+
+	}
+
+
